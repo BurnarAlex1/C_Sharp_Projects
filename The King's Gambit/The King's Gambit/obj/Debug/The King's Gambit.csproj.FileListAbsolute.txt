@@ -1,0 +1,12 @@
+D:\C# Projects\The King's Gambit\The King's Gambit\bin\Debug\The King's Gambit.exe.config
+D:\C# Projects\The King's Gambit\The King's Gambit\bin\Debug\The King's Gambit.exe
+D:\C# Projects\The King's Gambit\The King's Gambit\bin\Debug\The King's Gambit.pdb
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The King's Gambit.csproj.AssemblyReference.cache
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The_King_s_Gambit.Properties.Resources.resources
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The King's Gambit.csproj.GenerateResource.cache
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The King's Gambit.csproj.CoreCompileInputs.cache
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The King's Gambit.exe
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The King's Gambit.pdb
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\WindowsFormsApp1.MainGame.resources
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The_King_s_Gambit.StartingMenu.resources
+D:\C# Projects\The King's Gambit\The King's Gambit\obj\Debug\The_King_s_Gambit.EndingForm.resources

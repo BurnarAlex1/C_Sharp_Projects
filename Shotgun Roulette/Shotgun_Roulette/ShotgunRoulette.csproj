@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80E93050-E20D-4F0E-81EC-9170F8930F9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>63F73B4AC57DAAE4F31789AFA1E065D5BD5AD82B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ShotgunRoulette_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PlayerSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerSelection.Designer.cs">
+      <DependentUpon>PlayerSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FreeForAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FreeForAll.Designer.cs">
+      <DependentUpon>FreeForAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hardcore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hardcore.Designer.cs">
+      <DependentUpon>Hardcore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="FirstPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPage.Designer.cs">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Casual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Casual.Designer.cs">
+      <DependentUpon>Casual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scoreboard.Designer.cs">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TournamentMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TournamentMenu.Designer.cs">
+      <DependentUpon>TournamentMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GamemodeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GamemodeMenu.Designer.cs">
+      <DependentUpon>GamemodeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FreeForAll.resx">
+      <DependentUpon>FreeForAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hardcore.resx">
+      <DependentUpon>Hardcore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPage.resx">
+      <DependentUpon>FirstPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Casual.resx">
+      <DependentUpon>Casual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerSelection.resx">
+      <DependentUpon>PlayerSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scoreboard.resx">
+      <DependentUpon>Scoreboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamemodeMenu.resx">
+      <DependentUpon>GamemodeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TournamentMenu.resx">
+      <DependentUpon>TournamentMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ShotgunRoulette_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\RedBuckshot.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\BlackBuckshot.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\p1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\p2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Heart.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hourglass.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spyglass.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Sword.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Handcuffs.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\background_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="logo\game_logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bDragon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\dragonr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Background_Party_Image2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\redPlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\yellowPlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\greenPlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\bluePlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\purplePlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\orangePlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\pinkPlayerDragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\brownPlayerDragon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
